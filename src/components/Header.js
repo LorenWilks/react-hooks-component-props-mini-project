@@ -1,11 +1,10 @@
-import blogData from "../data/blog"
 
-function Header(props){
-    console.log(props)
+function Header({name}){
+    console.log({name})
     return (
-        <div>
-            <h3>{props.name}</h3>
-        </div>
+        <header>
+            <h1>{name}</h1>
+        </header>
     )
 }
 
