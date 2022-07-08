@@ -1,11 +1,13 @@
 import React from 'react'
+import Article from './Article'
 
-function ArticleList({articles}) {
-const blogPost = articles.map((post) => (
+function ArticleList({posts}) {
+const articles = posts.map((post) => (
     <Article key={post.id}title={post.title}date={post.date}preview={post.preview}minutes={post.minutes}/>
 ))
 return (
-    <main>{Article}</main>
-)}
+    <main>{articles}</main>)
+}
+console.log(articles)
 
 export default ArticleList
